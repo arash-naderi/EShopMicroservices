@@ -1,0 +1,2 @@
+Shopping.Web:
+https://localhost:6065/
