@@ -11,8 +11,8 @@ public class CheckoutBasketCommandValidator : AbstractValidator<CheckoutBasketCo
 {
     public CheckoutBasketCommandValidator()
     {
-        RuleFor(x => x.BasketCheckoutDto).NotNull().WithMessage("BasketCheckoutDto can't be null");
-        RuleFor(x => x.BasketCheckoutDto.UserName).NotEmpty().WithMessage("UserName is required");
+        RuleFor(x => x.BasketCheckoutDto).NotNull().WithMessage("{PropertyName} can't be null");
+        RuleFor(x => x.BasketCheckoutDto.UserName).NotEmpty().WithMessage("{PropertyName} is required");
     }
 }
 

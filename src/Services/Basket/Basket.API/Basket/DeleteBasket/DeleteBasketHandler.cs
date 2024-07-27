@@ -8,7 +8,7 @@ public class DeleteBasketCommandValidator : AbstractValidator<DeleteBasketComman
 {
     public DeleteBasketCommandValidator()
     {
-        RuleFor(x => x.UserName).NotEmpty().WithMessage("UserName is required");
+        RuleFor(x => x.UserName).NotEmpty().WithMessage("{PropertyName} is required");
     }
 }
 
